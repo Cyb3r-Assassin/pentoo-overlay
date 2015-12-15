@@ -48,7 +48,7 @@ src_install() {
 
 	dodir /usr/share/nikto
 	insinto /usr/share/nikto
-	doins -r plugins templates databases
+	doins -r plugins templates databases docs
 
 	NIKTO_PMS='JSON-PP.pm'
 	einfo "symlinking ${NIKTO_PMS} to ${VENDOR_LIB}"
